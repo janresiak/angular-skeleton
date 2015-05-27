@@ -1,0 +1,25 @@
+{
+  "name": "application-name",
+  "version": "0.1.0",
+  "authors": [
+    "author@mail.com"
+  ],
+  "moduleType": [
+    "globals"
+  ],
+  "license": "proprietary",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "lib"
+  ],
+  "dependencies": {
+    "underscore": "1.7.x",
+    "angular": "1.3.x",
+    "angular-cookies": "1.3.x",
+    "ui-router": "0.2.x"
+  }
+}

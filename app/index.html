@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html ng-app="application-name">
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>Application Title</title>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="icon" href="favicons/favicon.ico">
+
+        <!--css-->
+        <link rel="stylesheet" href="css/mystyles.css">
+
+        <!--libraries-->
+        <script src="lib/angular/angular.js"></script>
+        <script src="lib/angular-cookies/angular-cookies.js"></script>
+        <script src="lib/underscore/underscore.js"></script>
+        <script src="js/angular_underscore.js"></script>
+        <script src="lib/ui-router/angular-ui-router.js"></script>
+
+        <!--main app file-->
+        <script src="app.js"></script>
+
+        <!--configuration-->
+        <script src="config.js"></script>
+
+        <!--services-->
+        <script src="js/services.js"></script>
+        <script src="js/CookiesService.js"></script>
+        <script src="views/test/TestService.js"></script>
+
+        <!--factories-->
+        <script src="js/factories.js"></script>
+        <script src="js/LoggedUser.js"></script>
+
+        <!--directives-->
+        <script src="js/directives.js"></script>
+
+        <!--controllers-->
+        <script src="js/controllers.js"></script>
+        <script src="views/test/TestController.js"></script>
+        <script src="views/test2/Test2Controller.js"></script>
+
+    </head>
+    <body>
+
+        <div ui-view></div>
+
+    </body>
+</html>

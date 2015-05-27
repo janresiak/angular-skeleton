@@ -1,6 +1,6 @@
 <div>
 	<a ui-sref="test2">TEST2</a>
-    <p>user token: {{loggedUserToken || 'no user logged'}}</p>
+    <p>user: {{(isUserLoggedIn && 'user logged in') || 'no user logged'}}</p>
     test variable: {{variable}}
     <br>
     http get result: {{result}}

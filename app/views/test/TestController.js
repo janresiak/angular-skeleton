@@ -5,7 +5,7 @@ angular.module('application.controllers')
             $scope.variable;
             $scope.result;
             $scope.mappedData;
-            $scope.loggedUserToken;
+            $scope.isUserLoggedIn;
 
             var onSuccess = function(data) {
                 console.log('success', data);
@@ -21,7 +21,7 @@ angular.module('application.controllers')
                 $scope.variable = 'test string';
                 $scope.result = 'please wait...';
                 $scope.mappedData = _.map([1, 2, 3, 4, 5], function(el) {return 'mapped ' + el});
-                $scope.loggedUserToken = LoggedUser.getToken();
+                $scope.isUserLoggedIn = LoggedUser.isLogged();
                 TestService.getSample(onSuccess, onError);
             };
 
@@ -29,7 +29,7 @@ angular.module('application.controllers')
 
             $scope.logIn = function() {
                 LoggedUser.setToken("user123");
-                $scope.loggedUserToken = LoggedUser.getToken();
+                $scope.isUserLoggedIn = LoggedUser.isLogged();
             };
 
         }

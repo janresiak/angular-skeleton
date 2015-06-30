@@ -3,7 +3,7 @@ angular.module('application.controllers')
         function ($scope) {
 
             var init = function() {
-                $scope.newviewVariable = "This is new view!";
+                $scope.newviewVariable = "This is a new view!";
             };
 
             init()

@@ -25,6 +25,19 @@ application.config(['$stateProvider', '$urlRouterProvider', function($stateProvi
                     }
                 }
             }
+        }).
+        state('newview', {
+            abstract: false,
+            url: '/newview',
+            templateUrl: 'views/newview/newview.html',
+            controller: 'NewviewController',
+            resolve: {
+                auth: function(LoggedUser) {
+                    if (!LoggedUser.isLogged()) {
+                        $stateProvider.state('test');
+                    }
+                }
+            }
         });
 
 }]);

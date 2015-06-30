@@ -42,6 +42,7 @@ I put some constants in `config.js` file. Currently it contains server name for 
 ##Views
 ####View1
 <img src="https://raw.githubusercontent.com/janresiak/angular-skeleton/blog/sceenshots/ViewTestUnauthorized.PNG" width="300px">
+
 **The first view - test - it is available for everybody, it contains:**
 
 * link to `test2` view (it redirects only if you are logged in)
